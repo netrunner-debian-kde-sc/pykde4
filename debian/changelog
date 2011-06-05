@@ -13,5 +13,8 @@ pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
   * Clean up Uploaders list.
   * Clean up Build-Depends list.
   * Add libboost-dev to Build-Depends.
+  * Fix binNMUability of python-kde4-dev: depend on python-kde4 (>=
+    ${source:Version}) rather than ${binary:Version}. python-kde4-dev is
+    arch:all.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2011 20:31:17 +0300
