@@ -1,5 +1,10 @@
 pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
 
+  TODO: Update debian/copyright.
+        Switch to dh_python2.
+        Less python related warnings (pyversions, dpkg-gencontrol).
+        Fix W: python-kde4-dbg: python-debug-in-wrong-location.
+
   * Initial standalone release: split off from kdebindings.
   * Below you will find notable changes from previous kdebindings packaging.
 
