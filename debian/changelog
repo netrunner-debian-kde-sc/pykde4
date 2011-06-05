@@ -1,0 +1,17 @@
+pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
+
+  * Initial standalone release: split off from kdebindings.
+  * Below you will find notable changes from previous kdebindings packaging.
+
+  [ Modestas Vainius ]
+  * Require KDE SC 4.6.3
+  * Bump Standards-Version to 3.9.2: no changes needed.
+  * Switch debian/rules engine to dhmk based debian-qt-kde.mk.
+  * Pick pykde4 related patches from the kdebindings package and include them
+    in this package.
+  * Strip sequence numbers from the patch filenames.
+  * Clean up Uploaders list.
+  * Clean up Build-Depends list.
+  * Add libboost-dev to Build-Depends.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2011 20:31:17 +0300

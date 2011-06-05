@@ -1,0 +1,11 @@
+--- a/kpythonpluginfactory/kpythonpluginfactory.cpp
++++ b/kpythonpluginfactory/kpythonpluginfactory.cpp
+@@ -307,7 +307,7 @@ QLibrary *LoadPythonLibrary()
+ {
+     QLibrary *pythonLib = new QLibrary();
+     pythonLib->setLoadHints(QLibrary::ExportExternalSymbolsHint);
+-    pythonLib->setFileName(LIB_PYTHON);
++    pythonLib->setFileName(LIB_PYTHON ".1");
+     pythonLib->load();
+     return pythonLib;
+ }
