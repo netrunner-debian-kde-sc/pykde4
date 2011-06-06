@@ -21,6 +21,7 @@ Package: python-kde4
 Architecture: any
 Depends: ${shlibs:Depends}, ${python:Depends}, ${misc:Depends},
  python-qt4, ${sip:Depends}, python-sip
+Provides: ${python:Provides}
 Suggests: ${shlibs:Suggests}
 Description: Python bindings for the KDE Development Platform
  This package contains PyKDE, the Python bindings for the KDE
