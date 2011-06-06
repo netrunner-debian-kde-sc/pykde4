@@ -27,5 +27,6 @@ pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
     - add "X-Python-Version: >= 2.5" to the source section.
   * Drop pydefault make variable, not used anymore.
   * Execute pyversions "on demand".
+  * Drop ${python:Depends} from python-kde4-dev Depends.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2011 20:31:17 +0300

@@ -50,8 +50,7 @@ Description: Python bindings for the KDE Development Platform
 
 Package: python-kde4-dev
 Architecture: all
-Depends: ${python:Depends}, ${misc:Depends},
- python-kde4 (>= ${source:Version}), python-qt4 (>= 4.4.4),
+Depends: ${misc:Depends}, python-kde4 (>= ${source:Version}), python-qt4 (>= 4.4.4)
 Breaks: python-kde4 (<< ${source:Version})
 Description: UIC compiler and SIP files for PyKDE
  This package contains pykdeuic4, a wrapper around PyQt's own UIC (user
