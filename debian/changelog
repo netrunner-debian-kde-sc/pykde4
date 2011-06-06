@@ -25,5 +25,6 @@ pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
     - use python2 dh addon in place of python-support;
     - drop XB-Python-Version control field and remove debian/pyversions;
     - add "X-Python-Version: >= 2.5" to the source section.
+  * Drop pydefault make variable, not used anymore.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2011 20:31:17 +0300
