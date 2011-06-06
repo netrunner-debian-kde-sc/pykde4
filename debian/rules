@@ -13,11 +13,8 @@ define nl
 
 endef
 
-ifeq (,$(pyversions))
-$(error "no suitable pythonversion found, failing")
-endif
-
 override_dh_auto_configure:
+	$(if $(pyversions),,$(error "no suitable pythonversion found, failing"))
 	$(foreach v,$(pyversions),$(overridden_command) --builddirectory=builddir-$v -- \
 	    -DPYTHON_EXECUTABLE=/usr/bin/python$v \
 	    $(if $(filter $(pydefaultversion),$v),-DDEFAULT_PYTHON_VERSION=true,-DDEFAULT_PYTHON_VERSION=false) \
