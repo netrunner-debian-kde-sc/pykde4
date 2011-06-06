@@ -8,7 +8,7 @@ pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
   * Below you will find notable changes from previous kdebindings packaging.
 
   [ Modestas Vainius ]
-  * Require KDE SC 4.6.3
+  * Require KDE SC 4.6.3.
   * Bump Standards-Version to 3.9.2: no changes needed.
   * Switch debian/rules engine to dhmk based debian-qt-kde.mk.
   * Pick pykde4 related patches from the kdebindings package and include them
