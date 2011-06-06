@@ -22,7 +22,8 @@ pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
     - drop python-support from Build-Depends;
     - use python2 dh addon in place of python-support;
     - drop XB-Python-Version control field and remove debian/pyversions;
-    - add "X-Python-Version: >= 2.5" to the source section.
+    - add "X-Python-Version: >= 2.5" to the source section;
+    - remove python-support specific hacks from debian/not-installed.
   * Drop pydefault make variable, not used anymore.
   * Execute pyversions "on demand".
   * Drop ${python:Depends} from python-kde4-dev Depends.
