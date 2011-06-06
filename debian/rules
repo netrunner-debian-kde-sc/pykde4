@@ -17,7 +17,7 @@ override_dh_auto_configure:
 	$(if $(pyversions),,$(error "no suitable pythonversion found, failing"))
 	$(foreach v,$(pyversions),$(overridden_command) --builddirectory=builddir-$v -- \
 	    -DPYTHON_EXECUTABLE=/usr/bin/python$v \
-	    $(if $(filter $(pydefaultversion),$v),-DDEFAULT_PYTHON_VERSION=true,-DDEFAULT_PYTHON_VERSION=false) \
+	    -DDEFAULT_PYTHON_VERSION=$(if $(filter $(pydefaultversion),$v),true,false) \
 	    $(nl))
 
 override_dh_auto_build override_dh_auto_install override_dh_auto_test override_dh_auto_clean:
