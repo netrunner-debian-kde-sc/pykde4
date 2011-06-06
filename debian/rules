@@ -4,8 +4,8 @@ dh = --with=python2
 
 include /usr/share/pkg-kde-tools/qt-kde-team/2/debian-qt-kde.mk
 
-pyversions := $(shell pyversions -vr)
-pydefaultversion := $(shell pyversions -vd)
+pyversions = $(shell pyversions -vr)
+pydefaultversion = $(shell pyversions -vd)
 pyshared_nondefault = $(foreach v,$(filter-out $(pydefaultversion),$(pyversions)),usr/lib/pyshared/python$v/PyKDE4)
 
 define nl
