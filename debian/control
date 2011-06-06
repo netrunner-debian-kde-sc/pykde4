@@ -76,7 +76,7 @@ Package: python-kde4-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, kdelibs5-dbg, python-kde4 (= ${binary:Version}), 
+Depends: ${misc:Depends}, kdelibs5-dbg, python-kde4 (= ${binary:Version})
 Recommends: python-qt4-dbg
 Description: debugging symbols for the PyKDE bindings
  This package contains debugging files used to investigate problems with
