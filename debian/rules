@@ -1,6 +1,6 @@
 #! /usr/bin/make -f
 
-dh = --with=python-support
+dh = --with=python2
 
 include /usr/share/pkg-kde-tools/qt-kde-team/2/debian-qt-kde.mk
 
@@ -27,7 +27,7 @@ override_dh_auto_configure:
 override_dh_auto_build override_dh_auto_install override_dh_auto_test override_dh_auto_clean:
 	$(foreach v,$(pyversions),$(overridden_command) --builddirectory=builddir-$v $(nl))
 
-override_dh_pysupport:
+override_dh_python2:
 	$(overridden_command)
 	dh_sip -ppython-kde4
 

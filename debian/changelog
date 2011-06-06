@@ -1,8 +1,7 @@
 pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
 
   TODO: Update debian/copyright.
-        Switch to dh_python2.
-        Less python related warnings (pyversions, dpkg-gencontrol).
+        Less python related warnings (dpkg-gencontrol).
         Fix W: python-kde4-dbg: python-debug-in-wrong-location.
 
   * Initial standalone release: split off from kdebindings.
@@ -21,5 +20,10 @@ pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
   * Fix binNMUability of python-kde4-dev: depend on python-kde4 (>=
     ${source:Version}) rather than ${binary:Version}. python-kde4-dev is
     arch:all.
+  * Switch to dh_python2 (thanks to Scott Kitterman):
+    - drop python-support from Build-Depends;
+    - use python2 dh addon in place of python-support;
+    - drop XB-Python-Version control field and remove debian/pyversions;
+    - add "X-Python-Version: >= 2.5" to the source section.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2011 20:31:17 +0300

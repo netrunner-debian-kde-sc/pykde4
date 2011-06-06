@@ -8,10 +8,11 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.6.3),
  libphonon-dev (>= 4:4.6.0really4.4.4), libsoprano-dev (>= 2.3.0),
  libqt4-dev (>= 4:4.7.1), libqt4-opengl-dev (>= 4:4.7.1), libqtwebkit-dev,
  libboost-dev, shared-desktop-ontologies,
- python, python-all-dev, python-support (>= 0.6), 
- python-sip-dev (>= 4.12.0), python-qt4 (>> 4.8.3-1), python-qt4-dev (>> 4.8.3-1)
+ python, python-all-dev, python-sip-dev (>= 4.12.0),
+ python-qt4 (>> 4.8.3-1), python-qt4-dev (>> 4.8.3-1)
 Uploaders: Sune Vuorela <sune@debian.org>, Modestas Vainius <modax@debian.org>, Michael Meskes <meskes@debian.org>
 Standards-Version: 3.9.2
+X-Python-Version: >= 2.5
 Homepage: http://www.kde.org
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/pykde4.git
 Vcs-Browser: http://git.debian.org/gitweb/?p=pkg-kde/kde-sc/pykde4.git
@@ -49,7 +50,6 @@ Description: Python bindings for the KDE Development Platform
 
 Package: python-kde4-dev
 Architecture: all
-XB-Python-Version: ${python:Versions}
 Depends: ${python:Depends}, ${misc:Depends},
  python-kde4 (>= ${source:Version}), python-qt4 (>= 4.4.4),
 Breaks: python-kde4 (<< ${source:Version})
