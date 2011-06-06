@@ -68,8 +68,9 @@ Section: doc
 Architecture: all
 Depends: ${misc:Depends}
 Description: documentation and examples for PyKDE
- This package contains documentation for PyKDE, and some example code
- showing how to use it.
+ This package contains API documentation for PyKDE, and some example code
+ showing how to use it. You will probably want to install this package if
+ you're developing applications based on PyKDE.
 
 Package: python-kde4-dbg
 Section: debug

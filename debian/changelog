@@ -28,5 +28,6 @@ pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
   * Drop ${python:Depends} from python-kde4-dev Depends.
   * Add "Provides: ${python:Provides}" to python-kde4.
   * Optimize $(pyversions) check.
+  * Improve python-kde4-doc description.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2011 20:31:17 +0300
