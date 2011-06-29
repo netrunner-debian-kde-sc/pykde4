@@ -78,6 +78,8 @@ Architecture: any
 Priority: extra
 Depends: ${misc:Depends}, kdelibs5-dbg, python-kde4 (= ${binary:Version})
 Recommends: python-qt4-dbg
+Breaks: kdebindings-dbg
+Replaces: kdebindings-dbg
 Description: debugging symbols for the PyKDE bindings
  This package contains debugging files used to investigate problems with
  Python bindings for the KDE Development Platform. Install this package if you

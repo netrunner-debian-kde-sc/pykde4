@@ -33,5 +33,6 @@ pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
   * Add lintian overrides for
     usr/share/doc/python-kde4-doc/html/common/*-license. These are valid part
     of documentation.
+  * Add kdebindings-dbg to python-kde4-dbg Breaks/Replaces.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2011 20:31:17 +0300
