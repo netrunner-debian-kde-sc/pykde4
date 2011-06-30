@@ -1,7 +1,5 @@
 pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
 
-  TODO: Update debian/copyright.
-
   * Initial standalone release: split off from kdebindings.
   * Below you will find notable changes from previous kdebindings packaging.
 
@@ -34,5 +32,6 @@ pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
     usr/share/doc/python-kde4-doc/html/common/*-license. These are valid part
     of documentation.
   * Add kdebindings-dbg to python-kde4-dbg Breaks/Replaces.
+  * Update debian/coypright.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2011 20:31:17 +0300
