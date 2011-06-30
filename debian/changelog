@@ -1,4 +1,4 @@
-pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
+pykde4 (4:4.6.80-1) experimental; urgency=low
 
   * Initial standalone release: split off from kdebindings.
   * Below you will find notable changes from previous kdebindings packaging.
@@ -38,4 +38,4 @@ pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
     add_qt_kde_definitions.diff. Only add_definitions() part moved to the
     proper place remains.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2011 20:31:17 +0300
+ -- Modestas Vainius <modax@debian.org>  Thu, 30 Jun 2011 21:29:02 +0300
