@@ -1,3 +1,11 @@
+From: Sune Vuorela <sune@debian.org>
+Subject: Install sip files only when building for default python version
+Forwarded: not-needed
+Origin: vendor
+Last-Update: 2010-08-07
+
+Make it possible to only install the sip files under some conditions
+
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -261,15 +261,20 @@ PYTHON_INSTALL(${CMAKE_CURRENT_BINARY_DI

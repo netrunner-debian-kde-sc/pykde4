@@ -1,3 +1,9 @@
+From: Adeodato Simó <adeodato@debian.org>
+Subject: Do not let python modules link against libpython.
+Forwarded: no
+Origin: vendor
+Last-Update: 2008-01-25
+
 Do not link python modules against -lpython2.X. Since KDE4's cmake file
 uses --no-undefined by default, we have to remove that from the default
 CMAKE_SHARED_LINKER_FLAGS variable, but only for the pykde4 subdirectory.

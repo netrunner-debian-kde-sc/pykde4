@@ -1,3 +1,12 @@
+From: Michael Casadevall <mcasadevall@debian.org>
+Subject: Respect Qt SIP flags
+Forwarded: no
+Origin:
+Last-Update: 2009-04-15
+
+Corrects FTBFS on armel by making sure pykde4 properly parses the python-qt4
+flags passed from PythonQt4's cmake file.
+
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -95,6 +95,9 @@ INCLUDE_DIRECTORIES(
