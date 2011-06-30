@@ -34,5 +34,8 @@ pykde4 (4:4.6.80-0r1) UNRELEASED; urgency=low
   * Add kdebindings-dbg to python-kde4-dbg Breaks/Replaces.
   * Update debian/coypright.
   * Document all Debian patches.
+  * Replace include_default_settings_in_python_cmakelist.diff patch with
+    add_qt_kde_definitions.diff. Only add_definitions() part moved to the
+    proper place remains.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 05 Jun 2011 20:31:17 +0300
