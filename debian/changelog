@@ -4,6 +4,7 @@ pykde4 (4:4.6.80-2) UNRELEASED; urgency=low
   * Update the patches:
     - refresh
     - optional_install_sip_files.diff: fix small if()/endif() mismatch
+  * Small touches to the descriptions.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 01 Jul 2011 10:44:19 +0200
 

@@ -29,25 +29,27 @@ Description: Python bindings for the KDE Development Platform
  C++. It contains at least the following modules under the
  PyKDE namespace:
  .
+  * dnssd
   * kdecore
   * kdeui
   * khtml
   * kio
+  * knewstuff
   * kparts
+  * kterminal
   * ktexteditor
   * kutils
-  * solid
   * nepomuk
-  * dnssd
+  * plasma
+  * solid
  .
  And a few KDE related technologies like:
  .
-  * soprano
   * akonadi
+  * phonon
+  * soprano
  .
  This package provides modules for all supported Python versions.
- .
- This is part of the KDE Bindings module.
 
 Package: python-kde4-dev
 Architecture: all
@@ -70,7 +72,7 @@ Depends: ${misc:Depends}
 Description: documentation and examples for PyKDE
  This package contains API documentation for PyKDE, and some example code
  showing how to use it. You will probably want to install this package if
- you're developing applications based on PyKDE.
+ you are developing applications based on PyKDE.
 
 Package: python-kde4-dbg
 Section: debug
