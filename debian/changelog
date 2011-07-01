@@ -1,3 +1,8 @@
+pykde4 (4:4.6.80-2) UNRELEASED; urgency=low
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 01 Jul 2011 10:44:19 +0200
+
 pykde4 (4:4.6.80-1) experimental; urgency=low
 
   * Initial standalone release: split off from kdebindings.
