@@ -9,7 +9,7 @@ flags passed from PythonQt4's cmake file.
 
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -95,6 +95,9 @@ INCLUDE_DIRECTORIES(
+@@ -85,6 +85,9 @@ INCLUDE_DIRECTORIES(
      ${KDEPIMLIBS_INCLUDE_DIRS}
  )
  
@@ -19,7 +19,7 @@ flags passed from PythonQt4's cmake file.
  SET(SIP_INCLUDES ${PYQT4_SIP_DIR} sip)
  SET(SIP_CONCAT_PARTS 8)
  IF (WIN32)
-@@ -102,7 +105,7 @@ IF (WIN32)
+@@ -92,7 +95,7 @@ IF (WIN32)
  ELSE (WIN32)
      SET(SIP_TAGS ALL WS_X11 ${PYQT4_VERSION_TAG})
  ENDIF (WIN32)
