@@ -1,4 +1,6 @@
-pykde4 (4:4.6.80-2) UNRELEASED; urgency=low
+pykde4 (4:4.6.80-2) unstable; urgency=low
+
+  * "Bye bye to you, ugly monolithic kdebindings" release.
 
   [ Pino Toscano ]
   * Update the patches:
@@ -6,7 +8,10 @@ pykde4 (4:4.6.80-2) UNRELEASED; urgency=low
     - optional_install_sip_files.diff: fix small if()/endif() mismatch
   * Small touches to the descriptions.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 01 Jul 2011 10:44:19 +0200
+  [ Modestas Vainius ]
+  * Upload to unstable.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 04 Jul 2011 15:56:07 +0300
 
 pykde4 (4:4.6.80-1) experimental; urgency=low
 
