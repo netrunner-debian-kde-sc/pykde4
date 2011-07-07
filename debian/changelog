@@ -1,5 +1,8 @@
 pykde4 (4:4.6.80-3) UNRELEASED; urgency=low
 
+  * Add plasma-scriptengine-python (<< 4:4.6.5) to python-kde4 Breaks. Needed
+    as python-support based plasma-scriptengine-python does not work with
+    dh_python2 based python-kde4.
 
  -- Modestas Vainius <modax@debian.org>  Fri, 08 Jul 2011 00:19:29 +0300
 
