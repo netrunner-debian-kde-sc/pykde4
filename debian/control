@@ -20,7 +20,7 @@ Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/pykde4.git
 Package: python-kde4
 Architecture: any
 Depends: ${shlibs:Depends}, ${python:Depends}, ${misc:Depends},
- python-qt4 (>> 4.8.3-2.), ${sip:Depends}, python-sip
+ python-qt4, ${sip:Depends}, python-sip
 Provides: ${python:Provides}
 Suggests: ${shlibs:Suggests}
 Breaks: plasma-script-engine (<< 4:4.6.5)
