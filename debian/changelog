@@ -1,4 +1,4 @@
-pykde4 (4:4.6.80-3) UNRELEASED; urgency=low
+pykde4 (4:4.6.80-3) unstable; urgency=low
 
   * Add plasma-scriptengine-python (<< 4:4.6.5) to python-kde4 Breaks. Needed
     as python-support based plasma-scriptengine-python does not work with
@@ -8,7 +8,7 @@ pykde4 (4:4.6.80-3) UNRELEASED; urgency=low
   * Introduce a hack to restore compatibility with python-support based
     python-qt4. (Closes: #633499)
 
- -- Modestas Vainius <modax@debian.org>  Fri, 08 Jul 2011 00:19:29 +0300
+ -- Modestas Vainius <modax@debian.org>  Fri, 22 Jul 2011 12:10:12 +0300
 
 pykde4 (4:4.6.80-2) unstable; urgency=low
 
