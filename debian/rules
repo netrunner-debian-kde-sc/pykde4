@@ -27,6 +27,12 @@ override_dh_auto_build override_dh_auto_install override_dh_auto_test override_d
 override_dh_python2:
 	$(overridden_command)
 	dh_sip -ppython-kde4
+	# Create python-support compatibility symlinks
+	set -e; for f in debian/python-kde4/usr/lib/python*/*-packages/PyQt4/uic/*.py \
+	         debian/python-kde4/usr/lib/python*/*-packages/PyQt4/uic/widget-plugins/*.py; do \
+	    d="`echo $$f | sed 's,usr/lib/\(python[^/]\+\)/dist-packages,usr/lib/pymodules/\1,'`"; \
+	    mkdir -p "`dirname "$$d"`"; ln -s $${f#debian/python-kde4} $$d; \
+	done
 
 override_dh_strip:
 	$(overridden_command) --dbg-package=python-kde4-dbg

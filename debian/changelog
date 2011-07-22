@@ -5,6 +5,8 @@ pykde4 (4:4.6.80-3) UNRELEASED; urgency=low
     dh_python2 based python-kde4.
   * Fix GitWeb Vcs URL.
   * Move non-default python library to Suggests again.
+  * Introduce a hack to restore compatibility with python-support based
+    python-qt4. (Closes: #633499)
 
  -- Modestas Vainius <modax@debian.org>  Fri, 08 Jul 2011 00:19:29 +0300
 
