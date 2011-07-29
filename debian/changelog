@@ -1,5 +1,6 @@
 pykde4 (4:4.6.80-4) UNRELEASED; urgency=low
 
+  * Bump python-qt4 dependencies to 4.8.3-3~ (dh_python2 based).
 
  -- Modestas Vainius <modax@debian.org>  Sat, 30 Jul 2011 01:05:50 +0300
 

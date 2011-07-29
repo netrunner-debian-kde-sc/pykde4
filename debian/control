@@ -9,7 +9,7 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.6.3),
  libqt4-dev (>= 4:4.7.1), libqt4-opengl-dev (>= 4:4.7.1), libqtwebkit-dev,
  libboost-dev, shared-desktop-ontologies,
  python, python-all-dev, python-sip-dev (>= 4.12.0),
- python-qt4 (>> 4.8.3-1), python-qt4-dev (>> 4.8.3-1)
+ python-qt4 (>= 4.8.3-3~), python-qt4-dev (>= 4.8.3-3~)
 Uploaders: Sune Vuorela <sune@debian.org>, Modestas Vainius <modax@debian.org>, Michael Meskes <meskes@debian.org>
 Standards-Version: 3.9.2
 X-Python-Version: >= 2.5
@@ -54,7 +54,7 @@ Description: Python bindings for the KDE Development Platform
 
 Package: python-kde4-dev
 Architecture: all
-Depends: ${misc:Depends}, python-kde4 (>= ${source:Version}), python-qt4 (>= 4.4.4)
+Depends: ${misc:Depends}, python-kde4 (>= ${source:Version}), python-qt4 (>= 4.8.3-3~)
 Breaks: python-kde4 (<< ${source:Version})
 Description: UIC compiler and SIP files for PyKDE
  This package contains pykdeuic4, a wrapper around PyQt's own UIC (user
