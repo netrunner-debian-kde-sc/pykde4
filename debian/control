@@ -23,7 +23,7 @@ Depends: ${shlibs:Depends}, ${python:Depends}, ${misc:Depends},
  python-qt4 (>= 4.8.3-3~), ${sip:Depends}, python-sip
 Provides: ${python:Provides}
 Suggests: ${shlibs:Suggests}
-Breaks: plasma-script-engine (<< 4:4.6.5), python-qt4 (<< 4.8.3-3~)
+Breaks: plasma-scriptengine-python (<< 4:4.6.5), python-qt4 (<< 4.8.3-3~)
 Description: Python bindings for the KDE Development Platform
  This package contains PyKDE, the Python bindings for the KDE
  libraries, that allow you to write KDE programs using Python instead of
