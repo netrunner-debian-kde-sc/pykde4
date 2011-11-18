@@ -8,6 +8,7 @@ pykde4 (4:4.7.2-0r0) UNRELEASED; urgency=low
   [ José Manuel Santamaría Lema ]
   * Require KDE SC 4.7.2.
   * Bump soprano build depend to 2.7.0.
+  * Update not-installed file.
 
  -- Modestas Vainius <modax@debian.org>  Sat, 30 Jul 2011 01:05:50 +0300
 
