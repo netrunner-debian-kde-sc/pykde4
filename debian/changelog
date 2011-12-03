@@ -1,4 +1,4 @@
-pykde4 (4:4.7.2-0r1) UNRELEASED; urgency=low
+pykde4 (4:4.7.2-0r1) experimental; urgency=low
 
   [ Modestas Vainius ]
   * Bump python-qt4 dependencies to 4.8.3-3~ (dh_python2 based).
@@ -10,7 +10,7 @@ pykde4 (4:4.7.2-0r1) UNRELEASED; urgency=low
   * Bump soprano build depend to 2.7.0.
   * Update not-installed file.
 
- -- Modestas Vainius <modax@debian.org>  Sat, 30 Jul 2011 01:05:50 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2011 10:45:37 -0300
 
 pykde4 (4:4.6.80-3) unstable; urgency=low
 
