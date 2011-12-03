@@ -1,4 +1,4 @@
-pykde4 (4:4.7.2-0r1) experimental; urgency=low
+pykde4 (4:4.7.2-1) experimental; urgency=low
 
   [ Modestas Vainius ]
   * Bump python-qt4 dependencies to 4.8.3-3~ (dh_python2 based).
