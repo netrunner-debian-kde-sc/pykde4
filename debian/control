@@ -7,7 +7,7 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.7.4),
  kdelibs5-dev (>= 4:4.7),kdepimlibs5-dev (>= 4:4.7),
  libphonon-dev (>= 4:4.6.0really4.4.4), libsoprano-dev (>= 2.7.0),
  libqt4-dev (>= 4:4.7.1), libqt4-opengl-dev (>= 4:4.7.1), libqtwebkit-dev,
- libboost-dev, shared-desktop-ontologies,
+ libboost-dev, shared-desktop-ontologies (>= 0.8),
  python, python-all-dev, python-sip-dev (>= 4.12.0),
  python-qt4 (>= 4.8.3-3~), python-qt4-dev (>= 4.8.3-3~)
 Uploaders: Sune Vuorela <sune@debian.org>, Modestas Vainius <modax@debian.org>, Michael Meskes <meskes@debian.org>
