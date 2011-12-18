@@ -1,4 +1,4 @@
-pykde4 (4:4.7.4-0r1) UNRELEASED; urgency=low
+pykde4 (4:4.7.4-1) experimental; urgency=low
 
   * New upstream release.
 
@@ -6,7 +6,7 @@ pykde4 (4:4.7.4-0r1) UNRELEASED; urgency=low
   * Bump kde-sc-dev-latest build dependency to 4:4.7.4.
   * Bump shared-desktop-ontologies build dependency to 0.8.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 08 Dec 2011 04:08:05 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Dec 2011 01:38:40 +0100
 
 pykde4 (4:4.7.2-1) experimental; urgency=low
 
