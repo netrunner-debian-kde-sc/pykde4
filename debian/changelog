@@ -1,3 +1,18 @@
+pykde4 (4:4.7.4-3) unstable; urgency=low
+
+  * Team upload.
+  * Add new binary python3-pykde for Python 3 support (Closes: #672553)
+    - Adjust debian/rules
+    - Add debian/patches/python32_compile_fix.diff to support building with
+      python3.2
+    - Bump build-dep version for kde4libs to 4:4.7.4-6 due to patch added in
+      that revision to support building with Python 3
+    - Add Python 3 equivalent packages to build-depends
+    - Thanks to Colin Watson for the patch
+  * Bump standards version to 3.9.3 without further change
+
+ -- Scott Kitterman <scott@kitterman.com>  Sun, 20 May 2012 16:06:19 -0400
+
 pykde4 (4:4.7.4-2) unstable; urgency=low
 
   * Team upload. Upload to unstable.
