@@ -8,7 +8,7 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.7.4),
  libphonon-dev (>= 4:4.6.0really4.4.4), libsoprano-dev (>= 2.7.0),
  libqt4-dev (>= 4:4.7.1), libqt4-opengl-dev (>= 4:4.7.1), libqtwebkit-dev,
  libboost-dev, shared-desktop-ontologies (>= 0.8),
- python, python-all-dev, python3-all-dev,
+ python-all-dev (>= 2.6.6-3~), python3-all-dev,
  python-sip-dev (>= 4.12.0), python3-sip-dev,
  python-qt4 (>= 4.8.3-3~), python3-pyqt4, python-qt4-dev (>= 4.8.3-3~)
 Uploaders: Sune Vuorela <sune@debian.org>, Modestas Vainius <modax@debian.org>, Michael Meskes <meskes@debian.org>
@@ -23,7 +23,6 @@ Package: python-kde4
 Architecture: any
 Depends: ${shlibs:Depends}, ${python:Depends}, ${misc:Depends},
  python-qt4 (>= 4.8.3-3~), ${sip:Depends}, python-sip
-Provides: ${python:Provides}
 Suggests: ${shlibs:Suggests}
 Breaks: plasma-scriptengine-python (<< 4:4.6.5), python-qt4 (<< 4.8.3-3~)
 Description: Python bindings for the KDE Development Platform
@@ -94,8 +93,7 @@ Description: debugging symbols for the PyKDE bindings
 Package: python3-pykde4
 Architecture: any
 Depends: ${shlibs:Depends}, ${python3:Depends}, ${misc:Depends},
- python3-pyqt4, ${sip:Depends}, python3-sip
-Provides: ${python3:Provides}
+ python3-pyqt4, ${sip3:Depends}, python3-sip
 Description: Python 3 bindings for the KDE Development Platform
  This package contains PyKDE, the Python 3 bindings for the KDE
  libraries, that allow you to write KDE programs using Python 3 instead of
@@ -130,8 +128,6 @@ Architecture: any
 Priority: extra
 Depends: ${misc:Depends}, kdelibs5-dbg, python3-pykde4 (= ${binary:Version})
 Recommends: python3-pyqt4-dbg
-Breaks: kdebindings-dbg
-Replaces: kdebindings-dbg
 Description: debugging symbols for PyKDE bindings for Python 3
  This package contains debugging files used to investigate problems with
  Python 3 bindings for the KDE Development Platform. Install this package if

@@ -1,3 +1,16 @@
+pykde4 (4:4.7.4-4) unstable; urgency=low
+
+  * Team upload
+  * Use dh_sip3 for Python 3 instead of dh_sip
+    - Update debian/control (sip3:Depends for python3-pykde4)
+    - Add override for dh_python3 to also run dh_sip3
+  * Drop unneeded Breaks/Replaces on kdebindings-dbg for python3-pykde4-dbg
+  * Drop redundant build-depends on python
+  * Version python-all-dev build-depends to minimum version for dh_python2
+  * Drop unneeded Provides
+
+ -- Scott Kitterman <scott@kitterman.com>  Tue, 22 May 2012 09:43:25 -0400
+
 pykde4 (4:4.7.4-3) unstable; urgency=low
 
   * Team upload.

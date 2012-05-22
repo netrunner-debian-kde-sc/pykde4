@@ -34,6 +34,10 @@ override_dh_auto_build override_dh_auto_install override_dh_auto_test override_d
 	$(foreach v,$(pyversions),$(overridden_command) --builddirectory=builddir-$v $(nl))
 	$(foreach v,$(py3versions),$(overridden_command) --builddirectory=builddir-$v $(nl))
 
+override_dh_python3:
+	$(overridden_command)
+	dh_sip3 -ppython3-pykde4
+
 override_dh_python2:
 	$(overridden_command)
 	dh_sip -ppython-kde4
