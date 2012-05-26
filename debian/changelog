@@ -2,6 +2,9 @@ pykde4 (4:4.8.3-0r0) UNRELEASED; urgency=low
 
   * New upstream release.
 
+  [ José Manuel Santamaría Lema ]
+  * Require KDE SC 4.7.2.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 26 May 2012 05:16:43 +0200
 
 pykde4 (4:4.7.4-3) unstable; urgency=low

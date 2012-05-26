@@ -2,9 +2,9 @@ Source: pykde4
 Section: python
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Build-Depends: kde-sc-dev-latest (>= 4:4.7.4),
+Build-Depends: kde-sc-dev-latest (>= 4:4.8.3),
  debhelper (>= 7.3), cmake, pkg-kde-tools (>= 0.12),
- kdelibs5-dev (>= 4:4.7.4-6),kdepimlibs5-dev (>= 4:4.7),
+ kdelibs5-dev (>= 4:4.8),kdepimlibs5-dev (>= 4:4.8),
  libphonon-dev (>= 4:4.6.0really4.4.4), libsoprano-dev (>= 2.7.0),
  libqt4-dev (>= 4:4.7.1), libqt4-opengl-dev (>= 4:4.7.1), libqtwebkit-dev,
  libboost-dev, shared-desktop-ontologies (>= 0.8),
