@@ -6,9 +6,11 @@ Last-Update: 2011-07-01
 
 Make it possible to only install the sip files under some conditions
 
---- a/CMakeLists.txt
-+++ b/CMakeLists.txt
-@@ -251,15 +251,20 @@ PYTHON_INSTALL(${CMAKE_CURRENT_BINARY_DI
+Index: pykde4-4.8.4/CMakeLists.txt
+===================================================================
+--- pykde4-4.8.4.orig/CMakeLists.txt	2012-06-16 20:33:11.781497615 -0400
++++ pykde4-4.8.4/CMakeLists.txt	2012-06-16 20:34:06.585498468 -0400
+@@ -252,15 +252,20 @@
  
  # Install the .sip files for anyone that wants to build bindings on top of PyKDE4.
  # (Don't forget the / at the end of sip/.)

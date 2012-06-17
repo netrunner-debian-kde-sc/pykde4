@@ -2,7 +2,7 @@ Source: pykde4
 Section: python
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Build-Depends: kde-sc-dev-latest (>= 4:4.7.4),
+Build-Depends: kde-sc-dev-latest (>= 4:4.8.3),
  debhelper (>= 7.3), cmake, pkg-kde-tools (>= 0.12),
  kdelibs5-dev (>= 4:4.7.4-6),kdepimlibs5-dev (>= 4:4.7),
  libphonon-dev (>= 4:4.6.0really4.4.4), libsoprano-dev (>= 2.7.0),
@@ -80,7 +80,7 @@ Package: python-kde4-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, kdelibs5-dbg, python-kde4 (= ${binary:Version})
+Depends: ${misc:Depends}, kdelibs5-dbg, python-kde4 (= ${binary:Version}), python-dbg
 Recommends: python-qt4-dbg
 Breaks: kdebindings-dbg
 Replaces: kdebindings-dbg
@@ -126,7 +126,7 @@ Package: python3-pykde4-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, kdelibs5-dbg, python3-pykde4 (= ${binary:Version})
+Depends: ${misc:Depends}, kdelibs5-dbg, python3-pykde4 (= ${binary:Version}), python3-dbg
 Recommends: python3-pyqt4-dbg
 Description: debugging symbols for PyKDE bindings for Python 3
  This package contains debugging files used to investigate problems with

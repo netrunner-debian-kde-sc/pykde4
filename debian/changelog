@@ -1,3 +1,15 @@
+pykde4 (4:4.8.4-1) unstable; urgency=low
+
+  * Team upload
+  * New upstream release
+    - Drop debian/patches/python32_compile_fix.diff, incorporated upstream
+    - Bump build-depends version for kde-sc-dev-latest to 4:4.8.3
+  * Add python-dbg and python3-dbg to python-kde4-dbg and python3-kde4-dbg
+    depends
+  * Update debian/not-installed for python3 (change from Kubuntu)
+
+ -- Scott Kitterman <scott@kitterman.com>  Sat, 16 Jun 2012 20:28:58 -0400
+
 pykde4 (4:4.7.4-4) unstable; urgency=low
 
   * Team upload

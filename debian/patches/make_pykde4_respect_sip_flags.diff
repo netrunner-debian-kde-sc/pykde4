@@ -7,9 +7,11 @@ Last-Update: 2009-04-15
 Corrects FTBFS on armel by making sure pykde4 properly parses the python-qt4
 flags passed from PythonQt4's cmake file.
 
---- a/CMakeLists.txt
-+++ b/CMakeLists.txt
-@@ -85,6 +85,9 @@ INCLUDE_DIRECTORIES(
+Index: pykde4-4.8.4/CMakeLists.txt
+===================================================================
+--- pykde4-4.8.4.orig/CMakeLists.txt	2012-06-16 20:33:00.333497437 -0400
++++ pykde4-4.8.4/CMakeLists.txt	2012-06-16 20:33:11.781497615 -0400
+@@ -86,6 +86,9 @@
      ${KDEPIMLIBS_INCLUDE_DIRS}
  )
  
@@ -19,7 +21,7 @@ flags passed from PythonQt4's cmake file.
  SET(SIP_INCLUDES ${PYQT4_SIP_DIR} sip)
  SET(SIP_CONCAT_PARTS 8)
  IF (WIN32)
-@@ -92,7 +95,7 @@ IF (WIN32)
+@@ -93,7 +96,7 @@
  ELSE (WIN32)
      SET(SIP_TAGS ALL WS_X11 ${PYQT4_VERSION_TAG})
  ENDIF (WIN32)
