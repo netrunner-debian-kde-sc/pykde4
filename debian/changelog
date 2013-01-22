@@ -3,6 +3,7 @@ pykde4 (4:4.9.5-0r0) UNRELEASED; urgency=low
   * New upstream release
 
   [ José Manuel Santamaría Lema ]
+  * Refresh some patches to make them apply without any offset.
   * Add watch file.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 22 Jan 2013 13:53:10 +0100

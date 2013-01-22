@@ -8,11 +8,9 @@ Do not link python modules against -lpython2.X. Since KDE4's cmake file
 uses --no-undefined by default, we have to remove that from the default
 CMAKE_SHARED_LINKER_FLAGS variable, but only for the pykde4 subdirectory.
 
-Index: pykde4-4.8.4/CMakeLists.txt
-===================================================================
---- pykde4-4.8.4.orig/CMakeLists.txt	2011-07-27 14:37:12.549710782 -0400
-+++ pykde4-4.8.4/CMakeLists.txt	2012-06-16 20:32:09.389496643 -0400
-@@ -102,6 +102,9 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -113,6 +113,9 @@ ENDIF (PYTHON_3)
  
  ADD_DEFINITIONS(-D_REENTRANT -DQT_CORE_LIB -DQT_GUI_LIB -DUSING_SOPRANO_NRLMODEL_UNSTABLE_API)
  
