@@ -1,3 +1,9 @@
+pykde4 (4:4.9.5-0r0) UNRELEASED; urgency=low
+
+  * New upstream release
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 22 Jan 2013 13:53:10 +0100
+
 pykde4 (4:4.8.4-1) unstable; urgency=low
 
   * Team upload
