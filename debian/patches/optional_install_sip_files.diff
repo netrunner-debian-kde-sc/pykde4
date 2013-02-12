@@ -2,17 +2,17 @@ From: Sune Vuorela <sune@debian.org>
 Subject: Install sip files only when building for default python version
 Forwarded: not-needed
 Origin: vendor
-Last-Update: 2011-07-01
+Last-Update: 2013-02-12
 
 Make it possible to only install the sip files under some conditions
 
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -263,15 +263,20 @@ PYTHON_INSTALL(${CMAKE_CURRENT_BINARY_DI
+@@ -278,15 +278,20 @@ python_install(${CMAKE_CURRENT_BINARY_DI
  
  # Install the .sip files for anyone that wants to build bindings on top of PyKDE4.
  # (Don't forget the / at the end of sip/.)
--INSTALL(DIRECTORY sip/ DESTINATION ${SIP_DEFAULT_SIP_DIR}/PyKDE4
+-install(DIRECTORY sip/ DESTINATION ${SIP_DEFAULT_SIP_DIR}/PyKDE4
 -    PATTERN "*~" EXCLUDE    # This sucks, why can't I just whitelist what I _do_ want?
 -    PATTERN ".svn" EXCLUDE
 -    PATTERN "*.in" EXCLUDE)
@@ -26,12 +26,11 @@ Make it possible to only install the sip files under some conditions
 +   MESSAGE("Not installing sip files in this build pass")
 +ENDIF(DEFAULT_PYTHON_VERSION)
  
- ADD_SUBDIRECTORY(tools)
- #ADD_SUBDIRECTORY(docs)
- ADD_SUBDIRECTORY(examples)
--IF (NOT PYTHON_3)
-+IF (NOT PYTHON_3 AND DEFAULT_PYTHON_VERSION)
-     ADD_SUBDIRECTORY(kpythonpluginfactory)
--ENDIF (NOT PYTHON_3)
-+ENDIF (NOT PYTHON_3 AND DEFAULT_PYTHON_VERSION)
- #ADD_SUBDIRECTORY(pykdedocs)
+ add_subdirectory(tools)
+ #add_subdirectory(docs)
+ add_subdirectory(examples)
+-if (PYTHON_VERSION_MAJOR LESS 3)
++if (PYTHON_VERSION_MAJOR LESS 3 AND DEFAULT_PYTHON_VERSION)
+     add_subdirectory(kpythonpluginfactory)
+ endif ()
+ 

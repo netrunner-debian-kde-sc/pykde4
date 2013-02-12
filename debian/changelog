@@ -5,7 +5,12 @@ pykde4 (4:4.10.0-0r0) UNRELEASED; urgency=low
   [ José Manuel Santamaría Lema ]
   * Bump kde-sc-dev-latest build dependency to 4:4.10.0.
   * Bump build dependencies on other KDE SC components to 4:4.10.
-  * Refresh some patches to make them apply without any offset.
+  * Update patches:
+    - update python_modules_dont_link_against_libpython.diff.
+    - update add_qt_kde_definitions.diff.
+    - update make_pykde4_respect_sip_flags.diff.
+    - update optional_install_sip_files.diff.
+    - refresh other patches to make them apply without any offset.
   * Add watch file.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 22 Jan 2013 13:53:10 +0100
