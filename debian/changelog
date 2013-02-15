@@ -14,6 +14,7 @@ pykde4 (4:4.10.0-0r1) UNRELEASED; urgency=low
     - update make_pykde4_respect_sip_flags.diff.
     - update optional_install_sip_files.diff.
     - refresh other patches to make them apply without any offset.
+  * Update installed files and debian/not-installed.
   * Add watch file.
   * Add lintian overrides for hardening-no-fortify-functions.
 

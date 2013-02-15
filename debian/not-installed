@@ -1,13 +1,3 @@
-#Python *.pyc files.
-./usr/lib/python2.6/dist-packages/PyKDE4/__init__.pyc
-./usr/lib/python2.6/dist-packages/PyKDE4/pykdeconfig.pyc
-./usr/lib/python2.6/dist-packages/PyQt4/uic/pykdeuic4.pyc
-./usr/lib/python2.6/dist-packages/PyQt4/uic/widget-plugins/kde4.pyc
-./usr/lib/python2.7/dist-packages/PyKDE4/__init__.pyc
-./usr/lib/python2.7/dist-packages/PyKDE4/pykdeconfig.pyc
-./usr/lib/python2.7/dist-packages/PyQt4/uic/pykdeuic4.pyc
-./usr/lib/python2.7/dist-packages/PyQt4/uic/widget-plugins/kde4.pyc
-
 # dh_python3 renames them
 ./usr/lib/python3/dist-packages/PyKDE4/akonadi.so
 ./usr/lib/python3/dist-packages/PyKDE4/dnssd.so
