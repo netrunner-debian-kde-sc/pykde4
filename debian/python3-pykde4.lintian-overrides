@@ -1,0 +1,2 @@
+python3-pykde4: hardening-no-fortify-functions usr/lib/python3/dist-packages/PyKDE4/kdecore.cpython-32mu.so
+python3-pykde4: hardening-no-fortify-functions usr/lib/python3/dist-packages/PyKDE4/kdeui.cpython-32mu.so

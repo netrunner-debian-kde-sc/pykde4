@@ -1,1 +1,5 @@
 python-kde4: maintainer-script-ignores-errors postinst
+python-kde4: hardening-no-fortify-functions usr/lib/python2.6/dist-packages/PyKDE4/kdecore.so
+python-kde4: hardening-no-fortify-functions usr/lib/python2.6/dist-packages/PyKDE4/kdeui.so
+python-kde4: hardening-no-fortify-functions usr/lib/python2.7/dist-packages/PyKDE4/kdecore.so
+python-kde4: hardening-no-fortify-functions usr/lib/python2.7/dist-packages/PyKDE4/kdeui.so

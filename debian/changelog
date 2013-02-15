@@ -16,6 +16,7 @@ pykde4 (4:4.10.0-0r0) UNRELEASED; urgency=low
     - update optional_install_sip_files.diff.
     - refresh other patches to make them apply without any offset.
   * Add watch file.
+  * Add lintian overrides for hardening-no-fortify-functions.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 22 Jan 2013 13:53:10 +0100
 
