@@ -5,6 +5,10 @@ pykde4 (4:4.10.0-0r0) UNRELEASED; urgency=low
   [ José Manuel Santamaría Lema ]
   * Bump kde-sc-dev-latest build dependency to 4:4.10.0.
   * Bump build dependencies on other KDE SC components to 4:4.10.
+  * Add build depends on:
+    - nepomuk-core-dev
+    - pkg-config
+    - libpolkit-qt-1-dev
   * Update patches:
     - update python_modules_dont_link_against_libpython.diff.
     - update add_qt_kde_definitions.diff.
