@@ -1,4 +1,4 @@
-pykde4 (4:4.10.2-1) UNRELEASED; urgency=low
+pykde4 (4:4.10.3-1) UNRELEASED; urgency=low
 
   * New upstream release
 
@@ -18,7 +18,10 @@ pykde4 (4:4.10.2-1) UNRELEASED; urgency=low
   * Add watch file.
   * Add lintian overrides for hardening-no-fortify-functions.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 22 Jan 2013 13:53:10 +0100
+  [ Maximiliano Curia ]
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 28 May 2013 20:38:04 +0200
 
 pykde4 (4:4.8.4-1) unstable; urgency=low
 
