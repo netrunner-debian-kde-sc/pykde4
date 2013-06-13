@@ -9,8 +9,8 @@ flags passed from PythonQt4's cmake file.
 
 Index: pykde4-4.8.4/CMakeLists.txt
 ===================================================================
---- pykde4-4.8.4.orig/CMakeLists.txt	2012-06-16 20:33:00.333497437 -0400
-+++ pykde4-4.8.4/CMakeLists.txt	2012-06-16 20:33:11.781497615 -0400
+--- pykde4-4.8.4.orig/CMakeLists.txt	2013-05-20 08:28:43.709423820 -0400
++++ pykde4-4.8.4/CMakeLists.txt	2013-05-20 08:28:43.705423820 -0400
 @@ -86,6 +86,9 @@
      ${KDEPIMLIBS_INCLUDE_DIRS}
  )
