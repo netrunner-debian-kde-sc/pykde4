@@ -1,0 +1,32 @@
+Index: pykde4-4.8.4/cmake/modules/PythonMacros.cmake
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ pykde4-4.8.4/cmake/modules/PythonMacros.cmake	2013-05-20 01:35:17.817291741 -0400
+@@ -0,0 +1,27 @@
++# Python macros
++# ~~~~~~~~~~~~~
++# Copyright (c) 2007, Simon Edwards <simon@simonzone.com>
++# Cloned-and-hacked by Colin Watson <cjwatson@ubuntu.com>, removing bytecode
++# support.
++#
++# Redistribution and use is allowed according to the terms of the BSD license.
++# For details see the accompanying COPYING-CMAKE-SCRIPTS file.
++#
++# This file defines the following macros:
++#
++# PYTHON_INSTALL (SOURCE_FILE DESINATION_DIR)
++#     Install the SOURCE_FILE, which is a Python .py file, into the
++#     destination directory during install.
++
++GET_FILENAME_COMPONENT(PYTHON_MACROS_MODULE_PATH ${CMAKE_CURRENT_LIST_FILE}  PATH)
++
++MACRO(PYTHON_INSTALL SOURCE_FILE DESINATION_DIR)
++
++  FIND_FILE(_python_compile_py PythonCompile.py PATHS ${CMAKE_MODULE_PATH})
++
++  ADD_CUSTOM_TARGET(compile_python_files ALL)
++
++  # Install the source file.
++  INSTALL(FILES ${SOURCE_FILE} DESTINATION ${DESINATION_DIR})
++ENDMACRO(PYTHON_INSTALL)
++
