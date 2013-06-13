@@ -4,10 +4,10 @@ Note: It is OK for the Python and Python3 versions to have the same name
 because of the version specific ABI tags in Python 3 so files and the fact
 that Python 3 interpreters will search for those first.
 Copyright (C) 2012 Barry A. Warsaw <barry@python.org>
-Index: pykde4-4.8.4/kpythonpluginfactory/kpythonpluginfactory.cpp
+Index: pykde4/kpythonpluginfactory/kpythonpluginfactory.cpp
 ===================================================================
---- pykde4-4.8.4.orig/kpythonpluginfactory/kpythonpluginfactory.cpp	2013-05-20 02:27:28.047014262 -0400
-+++ pykde4-4.8.4/kpythonpluginfactory/kpythonpluginfactory.cpp	2013-05-20 02:27:28.039014262 -0400
+--- pykde4.orig/kpythonpluginfactory/kpythonpluginfactory.cpp	2013-06-13 15:54:27.847262446 +0200
++++ pykde4/kpythonpluginfactory/kpythonpluginfactory.cpp	2013-06-13 15:54:27.843262607 +0200
 @@ -29,6 +29,10 @@
  #include <kcomponentdata.h>
  #include <kdebug.h>
@@ -81,19 +81,19 @@ Index: pykde4-4.8.4/kpythonpluginfactory/kpythonpluginfactory.cpp
      PyTuple_SetItem(pArgs, 0, pArg1);
      PyTuple_SetItem(pArgs, 1, pArg2);
      RunFunction(factoryFunction, pArgs);
-Index: pykde4-4.8.4/CMakeLists.txt
+Index: pykde4/CMakeLists.txt
 ===================================================================
---- pykde4-4.8.4.orig/CMakeLists.txt	2013-05-20 02:27:28.047014262 -0400
-+++ pykde4-4.8.4/CMakeLists.txt	2013-05-20 02:30:31.627008838 -0400
-@@ -277,7 +277,9 @@
- ADD_SUBDIRECTORY(tools)
- #ADD_SUBDIRECTORY(docs)
- ADD_SUBDIRECTORY(examples)
--IF (NOT PYTHON_3 AND DEFAULT_PYTHON_VERSION)
-+IF ((NOT PYTHON_3 AND DEFAULT_PYTHON_VERSION) OR PYTHON_3)
+--- pykde4.orig/CMakeLists.txt	2013-06-13 15:54:27.847262446 +0200
++++ pykde4/CMakeLists.txt	2013-06-13 15:56:20.434739659 +0200
+@@ -295,7 +295,10 @@
+ add_subdirectory(tools)
+ #add_subdirectory(docs)
+ add_subdirectory(examples)
+-if (PYTHON_VERSION_MAJOR LESS 3 AND DEFAULT_PYTHON_VERSION)
++if ((PYTHON_VERSION_MAJOR LESS 3 AND DEFAULT_PYTHON_VERSION) OR
++    PYTHON_VERSION_MAJOR GREATER 2)
 +# Due to version specific ABI tagging in Python 3 so files, we can build for
 +# all Python 3 versions without a problem.
-     ADD_SUBDIRECTORY(kpythonpluginfactory)
--ENDIF (NOT PYTHON_3 AND DEFAULT_PYTHON_VERSION)
-+ENDIF ((NOT PYTHON_3 AND DEFAULT_PYTHON_VERSION) OR PYTHON_3)
- #ADD_SUBDIRECTORY(pykdedocs)
+     add_subdirectory(kpythonpluginfactory)
+ endif ()
+ 

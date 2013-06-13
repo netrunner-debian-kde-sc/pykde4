@@ -6,6 +6,5 @@ pythonpluginfactory_use_versioned_python_lib.diff
 optional_install_sip_files.diff
 new_pyincludes.diff
 cmake_no_bytecode.diff
-python3_sip_options.diff
 pythonpluginfactory_python3.diff
 kpythonpluginfactory_3.2support.diff
