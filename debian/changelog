@@ -18,6 +18,11 @@ pykde4 (4:4.10.4-1) UNRELEASED; urgency=low
   * Add watch file.
   * Add lintian overrides for hardening-no-fortify-functions.
 
+  [ Maximiliano Curia ]
+  * Add myself to uploaders.
+  * Revert most version dependencies changes reshuffling build-deps.
+  * Bump kdepimlibs-dev build-dep to 4:4.10.4.
+
  -- Maximiliano Curia <maxy@debian.org>  Thu, 13 Jun 2013 12:11:58 +0200
 
 pykde4 (4:4.8.4-1) unstable; urgency=low
