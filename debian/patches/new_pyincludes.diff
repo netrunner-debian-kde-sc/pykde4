@@ -1,0 +1,22 @@
+Index: pykde4-4.8.4/CMakeLists.txt
+===================================================================
+--- pykde4-4.8.4.orig/CMakeLists.txt	2013-05-17 18:34:50.000000000 -0400
++++ pykde4-4.8.4/CMakeLists.txt	2013-05-20 00:55:07.657362953 -0400
+@@ -26,6 +26,7 @@
+ 
+ FIND_PACKAGE(PythonLibrary REQUIRED)
+ INCLUDE(PythonMacros)
++FIND_PACKAGE(PythonLibs)
+ 
+ FIND_PACKAGE(SIP REQUIRED)
+ IF(SIP_VERSION STRLESS "040c00")    # These version numbers also appear in ../CMakeLists.txt
+@@ -60,7 +61,8 @@
+ ENDIF (${PYTHON_SHORT_VERSION} MATCHES "^3")
+ 
+ INCLUDE_DIRECTORIES(
+-    ${PYTHON_INCLUDE_PATH}
++    ${PYTHON_INCLUDE_DIR}
++    ${PYTHON_INCLUDE_DIR2}
+     ${SIP_INCLUDE_DIR}
+     ${QT_INCLUDE_DIR}
+     ${QT_QT_INCLUDE_DIR}
