@@ -1,6 +1,6 @@
-pykde4 (4:4.10.3-1) UNRELEASED; urgency=low
+pykde4 (4:4.10.4-1) UNRELEASED; urgency=low
 
-  * New upstream release
+  * New upstream release.
 
   [ José Manuel Santamaría Lema ]
   * Bump kde-sc-dev-latest build dependency to 4:4.10.1.
@@ -18,10 +18,7 @@ pykde4 (4:4.10.3-1) UNRELEASED; urgency=low
   * Add watch file.
   * Add lintian overrides for hardening-no-fortify-functions.
 
-  [ Maximiliano Curia ]
-  * New upstream release.
-
- -- Maximiliano Curia <maxy@debian.org>  Tue, 28 May 2013 20:38:04 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 13 Jun 2013 12:11:58 +0200
 
 pykde4 (4:4.8.4-1) unstable; urgency=low
 
