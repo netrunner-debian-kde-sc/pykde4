@@ -32,6 +32,9 @@ Upstream copyright holders:
   Copyright: © 2008 David Boddie <david@boddie.org.uk>
   Copyright: © 2006 Chusslove Illich <caslav.ilic@gmx.net>
 
+debian/patches/pythonpluginfactory_python3.diff
+  Copyright (C) 2012 Barry A. Warsaw <barry@python.org>
+
 General licensing information (extracted from docs/html/General):
 
   PyKDE4 is licensed under the GNU Lesser (or Library) General Public License

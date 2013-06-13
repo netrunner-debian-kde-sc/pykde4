@@ -9,8 +9,8 @@ pydefaultversion = $(shell pyversions -vd)
 pyshared_nondefault = $(foreach v,$(filter-out $(pydefaultversion),$(pyversions)),\
     usr/lib/pyshared/python$v/PyKDE4 usr/lib/python$v/dist-packages/PyKDE4)
 py3versions = $(shell py3versions -vr)
-PYTHONDONTWRITEBYTECODE = True
-export PYTHONDONTWRITEBYTECODE
+
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 define nl
 
@@ -21,18 +21,31 @@ override_dh_auto_configure:
 	$(if $(pyversions),,$(error "no suitable pythonversion found, failing"))
 	$(foreach v,$(pyversions),$(overridden_command) --builddirectory=builddir-$v -- \
 	    -DPYTHON_EXECUTABLE=/usr/bin/python$v \
+	    -DPYTHON_INCLUDE_DIR=/usr/include/python$v \
+	    -DPYTHON_INCLUDE_DIR2=/usr/include/$(DEB_HOST_MULTIARCH)/python$v \
+	    -DPYTHON_LIBRARY=/usr/lib/$(DEB_HOST_MULTIARCH)/libpython$(v).so \
 	    -DDEFAULT_PYTHON_VERSION=$(if $(filter $(pydefaultversion),$v),true,false) \
 	    $(nl))
 	$(foreach v,$(py3versions),$(overridden_command) --builddirectory=builddir-$v -- \
 	    -DPYTHON_EXECUTABLE=/usr/bin/python$v \
-	    -DPYTHON_LIBRARY=/usr/lib/libpython${v}mu.so \
+	    -DPYTHON_INCLUDE_DIR=/usr/include/python$v$(if $(filter 3.2,$(v)),mu,m) \
+	    -DPYTHON_INCLUDE_DIR2=/usr/include/$(DEB_HOST_MULTIARCH)/python$v$(if $(filter 3.2,$(v)),mu,m) \
+	    -DPYTHON_LIBRARY=/usr/lib/$(if $(filter 3.2,$(v)),libpython3.2mu.so,$(DEB_HOST_MULTIARCH)/libpython$(v)m.so) \
 	    -DPYTHON_SITE_PACKAGES_INSTALL_DIR=/usr/lib/python3/dist-packages \
 	    -DDEFAULT_PYTHON_VERSION=false \
 	    $(nl))
 
-override_dh_auto_build override_dh_auto_install override_dh_auto_test override_dh_auto_clean:
+override_dh_auto_build override_dh_auto_test override_dh_auto_clean:
 	$(foreach v,$(pyversions),$(overridden_command) --builddirectory=builddir-$v $(nl))
 	$(foreach v,$(py3versions),$(overridden_command) --builddirectory=builddir-$v $(nl))
+	
+override_dh_auto_install:
+	$(foreach v,$(pyversions),dh_auto_install --builddirectory=builddir-$v $(nl))
+	$(foreach v,$(py3versions),dh_auto_install --builddirectory=builddir-$v --destdir=debian/tmp-$v $(nl) ABITAG=`python$(v) -c "import sysconfig; print(sysconfig.get_config_var('SOABI'))"`; for f in `find debian/tmp-$v/ -name '*.so' ! -name '*.cpython*.so'`; do mv $$f $${f%.so}.$$ABITAG.so; done;)
+	set -e && for i in $(py3versions); do \
+	  mv debian/tmp-$$i/usr/bin/pykdeuic4 debian/tmp/usr/bin/pykdeuic4-$$i ; \
+	  cp -rv debian/tmp-$$i/* debian/tmp/ ; \
+	done
 
 override_dh_python3:
 	$(overridden_command)

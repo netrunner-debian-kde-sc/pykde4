@@ -1,5 +1,5 @@
 usr/bin/pykdeuic4
 usr/bin/pykdeuic4-2.6
 usr/bin/pykdeuic4-2.7
-usr/bin/pykdeuic4-3.2
+usr/bin/pykdeuic4-3.*
 usr/share/sip/PyKDE4

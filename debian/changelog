@@ -25,6 +25,28 @@ pykde4 (4:4.10.4-1) UNRELEASED; urgency=low
 
  -- Maximiliano Curia <maxy@debian.org>  Thu, 13 Jun 2013 12:11:58 +0200
 
+pykde4 (4:4.8.4-2) unstable; urgency=low
+
+  * Team upload
+  * Updates for sip4 transition and python multiarch (Closes: #708857)
+    - Bump minimum python-sip version to 4.14
+    - Add debian/patches/new_pyincludes.diff (based on Kubuntu patch) to
+      support multiple include directories for python3.3
+    - Add debian/patches/cmake_no_bytecode.diff to temporarily disable
+      byte compilation (which breaks python3 part of the build and is
+      not needed - upstream has a better solution for 4.9+)
+    - Add debian/patches/python3_sip_options.diff (from Kubuntu) to fix
+      duplicate typedef with current python-qt4
+      - Bump minimum python-qt4 and python-qt4-dev version to 4.9.4
+    - Add debian/patches/pythonpluginfactory_python3.diff and
+      kpythonpluginfactory_3.2support.diff, both from Kubuntu, to support
+      building kpythonpluginfactory for python3 too
+    - Adjust debian/rules to use the new include directories and to use
+      appropriate ABI tags for python3 (Closes: #707148)
+  * Add python-version-specific pykdeuic4 links to python-kde4-dev.install
+
+ -- Scott Kitterman <scott@kitterman.com>  Fri, 17 May 2013 18:38:28 -0400
+
 pykde4 (4:4.8.4-1) unstable; urgency=low
 
   * Team upload
