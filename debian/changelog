@@ -1,4 +1,4 @@
-pykde4 (4:4.10.4-1) UNRELEASED; urgency=low
+pykde4 (4:4.10.4-1) experimental; urgency=low
 
   * New upstream release.
 
@@ -26,7 +26,7 @@ pykde4 (4:4.10.4-1) UNRELEASED; urgency=low
   * Update python-kde4-dev install file.
   * Reverting build-dep versions changes made for reshuffle.
 
- -- Maximiliano Curia <maxy@debian.org>  Thu, 13 Jun 2013 12:11:58 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 14 Jun 2013 22:54:19 +0200
 
 pykde4 (4:4.8.4-2) unstable; urgency=low
 
