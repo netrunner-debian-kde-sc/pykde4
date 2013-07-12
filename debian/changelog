@@ -1,10 +1,10 @@
-pykde4 (4:4.10.5-1) UNRELEASED; urgency=low
+pykde4 (4:4.10.5-1) unstable; urgency=low
 
   * New upstream release.
   * Add lintian override for python3-pykde4.
   * Add unused subst variables.
 
- -- Maximiliano Curia <maxy@debian.org>  Thu, 11 Jul 2013 09:54:27 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 12 Jul 2013 23:23:53 +0200
 
 pykde4 (4:4.10.4-1) experimental; urgency=low
 
