@@ -39,6 +39,7 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${python:Depends}, ${misc:Depends},
  python-qt4 (>= 4.8.3-3~), ${sip:Depends}, python-sip
 Suggests: ${shlibs:Suggests}
+Provides: ${python:Provides}
 Breaks: plasma-scriptengine-python (<< 4:4.6.5), python-qt4 (<< 4.8.3-3~)
 Description: Python bindings for the KDE Development Platform
  This package contains PyKDE, the Python bindings for the KDE
@@ -109,6 +110,7 @@ Package: python3-pykde4
 Architecture: any
 Depends: ${shlibs:Depends}, ${python3:Depends}, ${misc:Depends},
  python3-pyqt4, ${sip3:Depends}, python3-sip
+Provides: ${python3:Provides}
 Description: Python 3 bindings for the KDE Development Platform
  This package contains PyKDE, the Python 3 bindings for the KDE
  libraries, that allow you to write KDE programs using Python 3 instead of
@@ -141,7 +143,7 @@ Package: python3-pykde4-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, kdelibs5-dbg, python3-pykde4 (= ${binary:Version}), python3-dbg
+Depends: ${misc:Depends}, ${python3:Depends}, kdelibs5-dbg, python3-pykde4 (= ${binary:Version}), python3-dbg
 Recommends: python3-pyqt4-dbg
 Description: debugging symbols for PyKDE bindings for Python 3
  This package contains debugging files used to investigate problems with
