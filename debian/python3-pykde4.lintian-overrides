@@ -1,2 +1,4 @@
 python3-pykde4: hardening-no-fortify-functions usr/lib/python3/dist-packages/PyKDE4/kdecore.cpython-32mu.so
 python3-pykde4: hardening-no-fortify-functions usr/lib/python3/dist-packages/PyKDE4/kdeui.cpython-32mu.so
+# python3 module
+python3-pykde4: python-script-but-no-python-dep usr/lib/python3/dist-packages/PyQt4/uic/pykdeuic4.py

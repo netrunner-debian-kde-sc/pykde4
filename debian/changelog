@@ -1,6 +1,7 @@
 pykde4 (4:4.10.5-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Add lintian override for python3-pykde4.
 
  -- Maximiliano Curia <maxy@debian.org>  Thu, 11 Jul 2013 09:54:27 +0200
 
