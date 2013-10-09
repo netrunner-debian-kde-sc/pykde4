@@ -38,7 +38,7 @@ override_dh_auto_configure:
 override_dh_auto_build override_dh_auto_test override_dh_auto_clean:
 	$(foreach v,$(pyversions),$(overridden_command) --builddirectory=builddir-$v $(nl))
 	$(foreach v,$(py3versions),$(overridden_command) --builddirectory=builddir-$v $(nl))
-	
+
 override_dh_auto_install:
 	$(foreach v,$(pyversions),dh_auto_install --builddirectory=builddir-$v $(nl))
 	$(foreach v,$(py3versions),dh_auto_install --builddirectory=builddir-$v --destdir=debian/tmp-$v $(nl) ABITAG=`python$(v) -c "import sysconfig; print(sysconfig.get_config_var('SOABI'))"`; for f in `find debian/tmp-$v/ -name '*.so' ! -name '*.cpython*.so'`; do mv $$f $${f%.so}.$$ABITAG.so; done;)
@@ -61,7 +61,7 @@ override_dh_strip:
 
 override_dh_shlibdeps:
 	if [ -d debian/python-kde4 ]; then \
-        dh_shlibdeps -ppython-kde4 $(foreach s,$(pyshared_nondefault),-X'$s/') -- \
-        	-dSuggests $(foreach s,$(pyshared_nondefault),debian/python-kde4/$s/*.so) -dDepends; \
+	  dh_shlibdeps -ppython-kde4 $(foreach s,$(pyshared_nondefault),-X'$s/') -- \
+	    -dSuggests $(foreach s,$(pyshared_nondefault),debian/python-kde4/$s/*.so) -dDepends; \
 	fi
 	$(overridden_command) --remaining-packages
