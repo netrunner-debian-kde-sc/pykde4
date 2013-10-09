@@ -1,6 +1,7 @@
 pykde4 (4:4.11.2-1) experimental; urgency=low
 
   * New upstream release.
+  * Refresh patches.
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 09 Oct 2013 16:25:06 +0200
 
