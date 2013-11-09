@@ -1,9 +1,9 @@
-pykde4 (4:4.11.3-1) UNRELEASED; urgency=low
+pykde4 (4:4.11.3-1) unstable; urgency=low
 
   * New upstream release.
   * Update build dependencies.
 
- -- Maximiliano Curia <maxy@debian.org>  Sat, 09 Nov 2013 19:07:05 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 09 Nov 2013 19:28:36 +0100
 
 pykde4 (4:4.11.2-1) experimental; urgency=low
 
