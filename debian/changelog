@@ -1,3 +1,9 @@
+pykde4 (4:4.13.1-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 17 May 2014 17:49:20 +0200
+
 pykde4 (4:4.12.2-2) unstable; urgency=medium
 
   * Release to unstable
