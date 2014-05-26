@@ -1,6 +1,7 @@
 pykde4 (4:4.13.1-1~) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Update build-dependencies.
 
  -- Maximiliano Curia <maxy@debian.org>  Thu, 22 May 2014 16:31:56 +0200
 
