@@ -1,3 +1,11 @@
+pykde4 (4:4.13.1-2) UNRELEASED; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * Add a patch from Fedora (no_gl_defines.diff) to fix building against
+    python-qt4 4.11.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 07 Jun 2014 19:48:28 +0400
+
 pykde4 (4:4.13.1-1) experimental; urgency=medium
 
   * New upstream release.
