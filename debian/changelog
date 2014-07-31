@@ -6,6 +6,7 @@ pykde4 (4:4.13.3-1) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
   * New upstream release.
+  * Remove upstream applied patch: no_gl_defines.diff
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 16 Jul 2014 13:22:42 +0200
 
