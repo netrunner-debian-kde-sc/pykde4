@@ -10,11 +10,11 @@ CMAKE_SHARED_LINKER_FLAGS variable, but only for the pykde4 subdirectory.
 
 Index: pykde4/CMakeLists.txt
 ===================================================================
---- pykde4.orig/CMakeLists.txt	2013-10-09 18:04:16.971427532 +0200
-+++ pykde4/CMakeLists.txt	2013-10-09 18:04:16.959428011 +0200
-@@ -129,6 +129,9 @@
- 
- add_definitions(-D_REENTRANT -DQT_CORE_LIB -DQT_GUI_LIB -DUSING_SOPRANO_NRLMODEL_UNSTABLE_API -DSIP_PROTECTED_IS_PUBLIC -Dprotected=public)
+--- pykde4.orig/CMakeLists.txt	2014-08-24 05:20:28.393672620 +0200
++++ pykde4/CMakeLists.txt	2014-08-24 05:20:28.389672785 +0200
+@@ -152,6 +152,9 @@
+     python_install(${CMAKE_CURRENT_BINARY_DIR}/pykdeconfig.py ${PYTHON_SITE_PACKAGES_INSTALL_DIR}/PyKDE4)
+ endif ()
  
 +# Do not use --no-undefined for python modules.
 +STRING(REPLACE -Wl,--no-undefined "" CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS}")

@@ -6,8 +6,8 @@ that Python 3 interpreters will search for those first.
 Copyright (C) 2012 Barry A. Warsaw <barry@python.org>
 Index: pykde4/kpythonpluginfactory/kpythonpluginfactory.cpp
 ===================================================================
---- pykde4.orig/kpythonpluginfactory/kpythonpluginfactory.cpp	2013-06-13 15:54:27.847262446 +0200
-+++ pykde4/kpythonpluginfactory/kpythonpluginfactory.cpp	2013-06-13 15:54:27.843262607 +0200
+--- pykde4.orig/kpythonpluginfactory/kpythonpluginfactory.cpp	2014-08-24 05:23:56.005133082 +0200
++++ pykde4/kpythonpluginfactory/kpythonpluginfactory.cpp	2014-08-24 05:23:56.001133247 +0200
 @@ -29,6 +29,10 @@
  #include <kcomponentdata.h>
  #include <kdebug.h>
@@ -83,9 +83,9 @@ Index: pykde4/kpythonpluginfactory/kpythonpluginfactory.cpp
      RunFunction(factoryFunction, pArgs);
 Index: pykde4/CMakeLists.txt
 ===================================================================
---- pykde4.orig/CMakeLists.txt	2013-06-13 15:54:27.847262446 +0200
-+++ pykde4/CMakeLists.txt	2013-06-13 15:56:20.434739659 +0200
-@@ -295,7 +295,10 @@
+--- pykde4.orig/CMakeLists.txt	2014-08-24 05:23:56.005133082 +0200
++++ pykde4/CMakeLists.txt	2014-08-24 05:23:56.001133247 +0200
+@@ -275,7 +275,10 @@
  add_subdirectory(tools)
  #add_subdirectory(docs)
  add_subdirectory(examples)

@@ -5,9 +5,11 @@ Forwarded: no
 Last-Update: 2011-06-30
 Origin: vendor
 
---- a/CMakeLists.txt
-+++ b/CMakeLists.txt
-@@ -35,6 +35,8 @@ set_package_properties(PythonInterp PROP
+Index: pykde4/CMakeLists.txt
+===================================================================
+--- pykde4.orig/CMakeLists.txt	2014-08-24 05:20:35.129395520 +0200
++++ pykde4/CMakeLists.txt	2014-08-24 05:20:35.125395684 +0200
+@@ -33,6 +33,8 @@
  
  include_directories(${KDE4_INCLUDES})
  
